@@ -8,6 +8,8 @@ const blogPosts = [
       "Exploring how artificial intelligence is revolutionizing drug discovery and development.",
     date: "March 15, 2024",
     category: "AI & Research",
+    image:
+      "https://imgs.search.brave.com/I_vm_TZDR6qi6_xsbahQ-F1Z20BAWztlKAUMy852mzU/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/cHJlbWl1bS1waG90/by93b3JraW5nLWJp/b3RlY2hub2xvZ3kt/dGhleS1hcmUtdXNp/bmctYWktZnV0dXJp/c3RpYy1tZXRob2Qt/bGFib3JhdG9yeS1y/ZXNlYXJjaGluZy13/aXRoLWFpXzU1MTg4/MC01NDYyLmpwZz9z/ZW10PWFpc19oeWJy/aWQmdz03NDA",
   },
   {
     title: "Maximizing Field Force Efficiency with AI",
@@ -15,6 +17,8 @@ const blogPosts = [
       "Learn how AI-powered insights can transform your pharmaceutical sales operations.",
     date: "March 10, 2024",
     category: "Field Operations",
+    image:
+      "https://imgs.search.brave.com/zkFDN_pxJAqrs8Mm-IshMLTzEzj57qwq2V7fuW_gvX8/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/YXh0cmlhLmNvbS9o/cy1mcy9odWJmcy9B/SS1GRkUlMjBNaWNy/b3NpdGUvQUktRW5h/YmxlZC1GRkUuanBn/P3dpZHRoPTg2MCZo/ZWlnaHQ9NTQwJm5h/bWU9QUktRW5hYmxl/ZC1GRkUuanBn",
   },
   {
     title: "Data Security in Healthcare AI",
@@ -22,6 +26,8 @@ const blogPosts = [
       "Best practices for maintaining data security while leveraging AI in healthcare.",
     date: "March 5, 2024",
     category: "Security",
+    image:
+      "https://imgs.search.brave.com/joY7zhumRppFPFh4m0ZCg-Yn5QmgOHoh5iGdwBwdgh4/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG4u/cHJvZC53ZWJzaXRl/LWZpbGVzLmNvbS82/MzIwMTI1YWNlNTM2/YjZhZDE0OGVjYTMv/NjcwZDAyNDk0MzQw/YzNlMzJlMThjOTVl/X0ElMjBkb2N0b3In/cyUyMGhhbmQlMjBz/aG93aW5nJTIwdGhl/JTIwdmlzdWFsJTIw/cmVwcmVzZW50YXRp/b24lMjBvZiUyMGN5/YmVyc2VjdXJpdHkl/MjBzeW1ib2wud2Vi/cA",
   },
 ];
 
@@ -48,8 +54,8 @@ const Blog: React.FC = () => {
                   {/* Image on the left */}
                   <div className="md:w-1/3 w-full h-64 md:h-auto">
                     <img
-                      className="w-full h-full object-cover md:rounded-l-xl"
-                      src="https://sdmntpreastus.oaiusercontent.com/files/00000000-e420-61f9-9918-d2411f63d9e4/raw?se=2025-05-16T13%3A26%3A10Z&sp=r&sv=2024-08-04&sr=b&scid=00000000-0000-0000-0000-000000000000&skoid=31bc9c1a-c7e0-460a-8671-bf4a3c419305&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-05-15T22%3A05%3A10Z&ske=2025-05-16T22%3A05%3A10Z&sks=b&skv=2024-08-04&sig=bXFcxdw7gghI8rCSRrwRtAFg2D4F4pIC8NabbE66wNA%3D"
+                      className="w-full h-full object-cover md:rounded-l-xl bg-white"
+                      src={post.image || "https://via.placeholder.com/300"}
                       alt={post.title}
                     />
                   </div>
